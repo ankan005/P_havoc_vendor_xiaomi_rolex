@@ -2414,3 +2414,70 @@ PRODUCT_PACKAGES += \
     qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a \
     qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a \
     qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a
+
+#Wifi & Hotspot Fixes
+PRODUCT_COPY_FILES += \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/libkeymaster3device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster3device.so \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster3device.so \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service.rc \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/android.hardware.audio@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio@2.0-service \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/init/android.hardware.audio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio@2.0-service.rc \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@2.0-impl.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/hw/android.hardware.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@2.0-impl.so \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.1-service.rc \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@2.0-service.rc \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.composer@2.1-impl.so \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@2.0-service \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@2.0-impl.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/seccomp_policy/configstore@1.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.0.policy \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
+ vendor/xiaomi/rolex/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/Wndroid.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/Wndroid.hardware.gnss@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/Wndroid.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/Wndroid.hardware.gnss@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffectsconfig.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffectsconfig.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/Wndroid.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/Wndroid.frameworks.sensorservice@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/Wndroid.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/Wndroid.frameworks.sensorservice@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/Wndroid.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/Wndroid.hardware.radio@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/libWkeystorebinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libWkeystorebinder.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/Wndroid.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/Wndroid.hardware.radio@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/libWkeystorebinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libWkeystorebinder.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/Wndroid.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/Wndroid.hardware.sensors@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/Wndroid.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/Wndroid.hardware.sensors@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/android.hardware.tetheroffload.control@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.control@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib64/android.hardware.tetheroffload.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.config@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/android.hardware.tetheroffload.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.tetheroffload.config@1.0.so \
+ vendor/xiaomi/rolex/proprietary/vendor/lib/libdisplayconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayconfig.so 
+# Camera fixes
+PRODUCT_COPY_FILES += \
+ vendor/xiaomi/rolex/proprietary/lib/android.hardware.camera.common@1.0.so:system/lib/android.hardware.camera.common@1.0.so \
+ vendor/xiaomi/rolex/proprietary/lib/android.hardware.camera.device@1.0.so:system/lib/android.hardware.camera.device@1.0.so \
+ vendor/xiaomi/rolex/proprietary/lib/android.hardware.camera.device@3.2.so:system/lib/android.hardware.camera.device@3.2.so \
+ vendor/xiaomi/rolex/proprietary/lib/android.hardware.camera.device@3.3.so:system/lib/android.hardware.camera.device@3.3.so \
+ vendor/xiaomi/rolex/proprietary/lib/android.hardware.camera.device@3.4.so:system/lib/android.hardware.camera.device@3.4.so \
+ vendor/xiaomi/rolex/proprietary/lib/android.hardware.camera.provider@2.4.so:system/lib/android.hardware.camera.provider@2.4.so \
+ vendor/xiaomi/rolex/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
+ vendor/xiaomi/rolex/proprietary/lib/libcamera_metadata.so:system/lib/libcamera_metadata.so \
+ vendor/xiaomi/rolex/proprietary/lib/libcamera2ndk.so:system/lib/libcamera2ndk.so \
+ vendor/xiaomi/rolex/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
+ vendor/xiaomi/rolex/proprietary/lib64/android.hardware.camera.common@1.0.so:system/lib64/android.hardware.camera.common@1.0.so \
+ vendor/xiaomi/rolex/proprietary/lib64/android.hardware.camera.device@1.0.so:system/lib64/android.hardware.camera.device@1.0.so \
+ vendor/xiaomi/rolex/proprietary/lib64/android.hardware.camera.device@3.2.so:system/lib64/android.hardware.camera.device@3.2.so \
+ vendor/xiaomi/rolex/proprietary/lib64/android.hardware.camera.device@3.3.so:system/lib64/android.hardware.camera.device@3.3.so \
+ vendor/xiaomi/rolex/proprietary/lib64/android.hardware.camera.device@3.4.so:system/lib64/android.hardware.camera.device@3.4.so \
+ vendor/xiaomi/rolex/proprietary/lib64/android.hardware.camera.provider@2.4.so:system/lib64/android.hardware.camera.provider@2.4.so \
+ vendor/xiaomi/rolex/proprietary/lib64/libkeystore_binder.so:system/lib64/libkeystore_binder.so \
+ vendor/xiaomi/rolex/proprietary/lib64/libkeystore-engine.so:system/lib64/libkeystore-engine.so
